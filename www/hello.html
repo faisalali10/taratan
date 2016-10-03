@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/onsenui/js/onsenui.min.js"></script>
+    <script src="lib/onsenui/js/angular-onsenui.min.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        ons.bootstrap()
+          .controller('HelloController', function() {
+            this.world = 'World';
+          });
+        ons.ready(function() {s
+            console.log("Onsen UI is ready!");
+        });
+    </script>
+    </head>
+    <body>
+    <ons-page ng-controller="PageController as page" modifier="full_bg"> 
+      <!--Header-->
+      <ons-toolbar>
+        <div class="center hello-title">Hello!</div>
+      </ons-toolbar>
+      <!--Header--> 
+      <!--Form Input-->
+      <div style="text-align: center; margin-top: 165px;">
+        <ons-row>
+          <ons-col>
+            <p style="width:100%">
+            <div class="input-cont">
+              <ons-input id="username" modifier="underbar ctm-input" placeholder="Email Address" float ng-model="page.username"> <span class="input-icon"><i class="fa fa-user" aria-hidden="true" style="color:0a9763 !important;"></i></span> </ons-input>
+            </div>
+            </p>
+          </ons-col>
+        </ons-row>
+        <ons-row>
+          <ons-col>
+            <p style="width:100%">
+            <div class="input-cont">
+              <ons-input id="password" modifier="underbar ctm-input" type="password" placeholder="Password" float ng-model="page.password"> <span class="input-icon"><i class="fa fa-lock" aria-hidden="true"></i></span> </ons-input>
+            </div>
+            </p>
+          </ons-col>
+        </ons-row>
+        <div class="input-cont" style="margin-top:30px;">
+          <ons-row>
+            <ons-col width="20px">
+              <label class="left">
+                <ons-input type="checkbox" input-id="check-1" ng-model="page.apples"></ons-input>
+              </label>
+            </ons-col>
+            <ons-col>
+              <label for="check-1" class="txt-reg"> Keep me logged Inn </label>
+            </ons-col>
+          </ons-row>
+        </div>
+        <ons-row>
+          <ons-col>
+            <p style="margin-top: 30px; width:100%">
+            <div class="input-cont">
+              <ons-button modifier="large-welcome">Sign In</ons-button>
+            </div>
+            </p>
+          </ons-col>
+          </ons-row>
+          <ons-row>
+          <ons-col>
+              <p class="txt-reg" style="text-align:center"><a href="#">Forgot Password?</a> </p>
+            </ons-col>
+            </ons-row>
+            <div style=" margin-top:90px; margin-bottom:30px;">
+            <ons-row>
+          <ons-col>
+              <p class="txt-reg" style="text-align:center">Don’t Have an Account ? <a href="#">Register Here</a> </p>
+            </ons-col>
+            </ons-row>
+            </div>
+        
+      </div>
+      <!--Form Input--> 
+      
+    </ons-page>
+</body>
+</html>

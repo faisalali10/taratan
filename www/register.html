@@ -1,0 +1,65 @@
+<ons-page ng-controller="PageController as page" modifier="full_bg_reg">
+      <ons-row>
+        <ons-col>
+          <ons-toolbar>
+            <div class="left">
+              <ons-back-button>Back</ons-back-button>
+            </div>
+            <div class="center">Register</div>
+          </ons-toolbar>
+        </ons-col>
+      </ons-row>
+      <div class="input-cont">
+      <ons-row>
+        <ons-col>
+        <p class="txt-reg-i">Account Details</p>
+         </ons-col>
+      </ons-row>
+      </div>
+      <ons-row>
+          <ons-col>
+            <p style="width:100%">
+            <div class="input-cont">
+              <ons-input id="username" modifier="underbar ctm-input" placeholder="User Name" float ng-model="page.username"> <span class="input-icon"><i class="fa fa-user" aria-hidden="true" style="color:0a9763 !important;"></i></span> </ons-input>
+            </div>
+            </p>
+          </ons-col>
+        </ons-row>
+        <ons-row>
+          <ons-col>
+            <p style="width:100%">
+            <div class="input-cont">
+              <ons-input id="username" modifier="underbar ctm-input" placeholder="Email" float ng-model="page.username"> <span class="input-icon"><i class="fa fa-envelope" aria-hidden="true" style="color:0a9763 !important;"></i></span> </ons-input>
+            </div>
+            </p>
+          </ons-col>
+        </ons-row>
+        <ons-row>
+          <ons-col>
+            <p style="width:100%">
+            <div class="input-cont">
+              <ons-input id="username" modifier="underbar ctm-input" placeholder="Password" float ng-model="page.username"> <span class="input-icon"><i class="fa fa-key" aria-hidden="true" style="color:0a9763 !important;"></i></span> </ons-input>
+            </div>
+            </p>
+          </ons-col>
+        </ons-row>
+        <ons-row>
+          <ons-col>
+            <p style="width:100%">
+            <div class="input-cont">
+              <ons-input id="username" modifier="underbar ctm-input" placeholder="Confirm Password"  ng-model="page.username"> <span class="input-icon"><i class="fa fa-check" aria-hidden="true" style="color:0a9763 !important;"></i></span> </ons-input>
+            </div>
+            </p>
+          </ons-col>
+        </ons-row>
+        <ons-row>
+          <ons-col>
+            <p style="margin-top: 30px; width:100%">
+            <div class="input-cont">
+              <ons-button modifier="large-welcome-gr">Register</ons-button>
+            </div>
+            </p>
+          </ons-col>
+          </ons-row>
+      </div>
+    </ons-page>
